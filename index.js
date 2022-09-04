@@ -32,7 +32,7 @@
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
-    .register('/sw.js')
+    .register('/Countdown-date/sw.js')
     .then(() => { console.log('Service Worker Registered'); });
 }
 

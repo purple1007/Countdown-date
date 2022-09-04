@@ -1,16 +1,16 @@
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open('countdown-date').then((cache) => cache.addAll([
-      '/',
-      '/index.html',
-      '/index.js',
-      '/style.css',
-      '/icon/favicon.ico',
-      '/icon/favicon-16.png',
-      '/icon/favicon-32.png',
-      '/icon/favicon-256.png',
-      '/icon/Icon-192.png',
-      '/icon/Icon-512.png'
+      '/Countdown-date/',
+      '/Countdown-date/index.html',
+      '/Countdown-date/index.js',
+      '/Countdown-date/style.css',
+      '/Countdown-date/icon/favicon.ico',
+      '/Countdown-date/icon/favicon-16.png',
+      '/Countdown-date/icon/favicon-32.png',
+      '/Countdown-date/icon/favicon-256.png',
+      '/Countdown-date/icon/Icon-192.png',
+      '/Countdown-date/icon/Icon-512.png'
     ])),
   );
 });
