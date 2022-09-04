@@ -1,0 +1,102 @@
+:root {
+  --bg-white: #EEEBE2;
+  --text-brown: #A18275;
+  --text-black: #3D3836;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  align-items: center;
+  background-color: var(--bg-white);
+  display: flex;
+  font-family:  'STIX Two Text', serif;
+}
+
+.container {
+  color: var(--text-brown);
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 400;
+  letter-spacing: .125rem;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+ul {
+  display: flex;
+  padding: 0 0 1rem 0;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.2rem;
+  list-style-type: none;
+  padding: 1rem;
+}
+
+li span {
+  display: block;
+  font-weight: 500;
+  font-size: 5rem;
+  color: var(--text-black);
+}
+
+.footer {
+  margin-top: 2rem;
+}
+
+button {
+  background: var(--text-brown);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-family:  'STIX Two Text', serif;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+button:hover {
+  background: #927061;
+}
+
+button:focus {
+  background: #8b6555;
+  border: 1px solid #57453e;
+}
+
+@media all and (max-width: 768px) {
+  h1 { 
+    font-size: 2rem;
+    letter-spacing: 0rem;
+  }
+  h2 { font-size: 1.2rem;}
+  li {
+    font-size:  0.9rem;
+    padding: 0.3rem;
+  }
+  li span {
+    font-size: 3.5rem;
+  }
+  .container {
+    padding-bottom: 10rem;
+  }
+}
