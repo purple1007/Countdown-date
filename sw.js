@@ -1,10 +1,16 @@
 self.addEventListener('install', (e) => {
   e.waitUntil(
-    caches.open('fox-store').then((cache) => cache.addAll([
+    caches.open('countdown-date').then((cache) => cache.addAll([
       '/',
       '/index.html',
       '/index.js',
-      '/style.css'
+      '/style.css',
+      '/icon/favicon.ico',
+      '/icon/favicon-16.png',
+      '/icon/favicon-32.png',
+      '/icon/favicon-256.png',
+      '/icon/Icon-192.png',
+      '/icon/Icon-512.png'
     ])),
   );
 });
