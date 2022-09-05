@@ -60,13 +60,13 @@ li span {
 }
 
 .footer {
-  margin-top: 2rem;
   display: flex;
   justify-content: center;
 }
 
 button {
   background: var(--text-brown);
+  margin-top: 2rem;
   color: #fff;
   border: none;
   padding: 0.5rem 1.2rem;
